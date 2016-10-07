@@ -1,3 +1,12 @@
-var currentTime = 
-if (currentTime<=12.00) {
-  console.log("Good Moring!")
+var today = new Date();
+var hourNow = today.getHours();
+var greeting; 
+
+if (hourNow > 18) {
+  greeting = 'Good Evening' ; 
+} else if (hourNow > 12) {
+  greeting = 'Good Afternoon';
+} else if (hourNow > 0) {
+  greeting = 'good Morning';
+} else {
+  greeting = 'Welcome!'}
